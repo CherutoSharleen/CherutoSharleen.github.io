@@ -11,3 +11,10 @@ chips.forEach(c => c.onclick = () => {
   const lens = c.dataset.lens;
   cards.forEach(k => k.classList.toggle("dim", lens !== "all" && !k.dataset.tags.includes(lens)));
 });
+
+document.querySelectorAll('a[href^="http"]').forEach(link => {
+  link.target = "_blank";
+  link.rel = "noopener noreferrer";
+});
+
+document.getElementById("year").textContent = new Date().getFullYear();
