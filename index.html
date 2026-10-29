@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sharleen Busienei · AI Engineer</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <nav>
+    <strong class="mono">sharleen.</strong>
+    <div class="links">
+      <a href="#about">About</a>      <a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#writing">Writing</a>
+      <button class="icon-btn" id="theme" aria-label="Toggle theme">◐</button>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div>
+      <div class="eyebrow mono">AI ENGINEER · LLM APPS, RETRIEVAL &amp; EVALUATION · NAIROBI</div>
+      <h1>Sharleen Busienei. I build AI systems that <em>work in production.</em></h1>
+      <p class="lede">AI engineer who previously worked at Microsoft for three years on search and recommendation for
+        Microsoft 365 Copilot (2M+ monthly enterprise users). I build LLM applications, hybrid retrieval and agents,
+        and the evaluation, experimentation and telemetry that show whether they work. BSc Computer Science, First Class Honours.</p>
+      <div class="cta">
+        <a class="btn primary" href="#projects">See my projects</a>
+        <a class="btn" href="https://github.com/SBusienei">GitHub</a>
+        <a class="btn" href="https://medium.com/@sbusienei">Medium</a>
+        <a class="btn" href="https://dev.to/sbusienei">DEV</a>
+        <a class="btn" href="https://www.linkedin.com/in/sharleencheruto/">LinkedIn</a>
+      </div>
+    </div>
+    <div class="avatar art"><img src="img/hero.svg" alt="Abstract ranked search results graphic. Swap for a headshot."></div>
+  </header>
+
+  <div class="facts">
+    <div><b>4 yrs</b><span>building software &amp; AI</span></div>
+    <div><b>30+</b><span>A/B evaluations</span></div>
+    <div><b>~120M</b><span>telemetry events / day</span></div>
+    <div><b>First Class</b><span>BSc Computer Science</span></div>
+  </div>
+
+  <section id="about">
+    <h2>About</h2>
+    <div class="two">
+      <div>
+        <p>        I'm an AI engineer. My start was <strong>search, ranking and evaluation</strong> at Microsoft, which taught me
+                  that the hard part is rarely the model. It's knowing whether a change actually helped.</p>
+        <p>I graduated top of my class in Computer Science at the University of Nairobi, and was a 2023
+          <strong>Deep Learning Indaba</strong> scholar in Accra.</p>
+      </div>
+      <div>
+        <p><strong>Failures usually live upstream of the ranker</strong>: in how documents were modelled, what was
+          indexed, and whether the query was ever a search query.</p>
+        <p>I speak English and Swahili fluently, and some French.         Now I build LLM apps, retrieval and agents end to end.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <h2>Experience</h2>
+    <div class="timeline">
+      <div class="job">
+        <h3><svg class="co" viewBox="0 0 21 21" aria-label="Microsoft"><rect width="10" height="10" fill="#f25022"/><rect x="11" width="10" height="10" fill="#7fba00"/><rect y="11" width="10" height="10" fill="#00a4ef"/><rect x="11" y="11" width="10" height="10" fill="#ffb900"/></svg>Software Engineer, Search &amp; Recommendation (Microsoft 365 Copilot)</h3>
+        <div class="meta mono">Microsoft · Aug 2023 – Oct 2026 · promoted twice, L59 → L61 (Software Engineer II)</div>
+        <ul>
+          <li>Worked on evaluating embedding models and ranking against offline relevance judgments and online behavioural signals.</li>
+          <li>Contributed to 30+ controlled A/B evaluations that informed launch and rollback decisions.</li>
+          <li>Worked on telemetry pipelines processing roughly 120M events a day.</li>
+          <li>Partnered with product, engineering and design on search quality.</li>
+        </ul>
+      </div>
+      <div class="job">
+        <h3><svg class="co" viewBox="0 0 21 21" aria-label="Microsoft"><rect width="10" height="10" fill="#f25022"/><rect x="11" width="10" height="10" fill="#7fba00"/><rect y="11" width="10" height="10" fill="#00a4ef"/><rect x="11" y="11" width="10" height="10" fill="#ffb900"/></svg>Software Engineering Intern, Africa Development Centre</h3>
+        <div class="meta mono">Microsoft · Jul – Sep 2022</div>
+        <ul>
+          <li>Built the Teams search bar app-results experience (a federated search candidate source).</li>
+          <li>Built an offline precision/recall evaluation tool for query-to-plugin matching.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <p class="sub">Each one is a question I wanted to answer. Filter by what you're hiring for.</p>
+    <div class="lens" id="lens">
+      <button class="chip on" data-lens="all">All</button>
+      <button class="chip" data-lens="ds">Data science</button>
+      <button class="chip" data-lens="mle">ML / AI engineering</button>
+      <button class="chip" data-lens="fde">Applied / deployment</button>
+    </div>
+    <div class="grid">
+      <article class="card" data-tags="mle fde">
+        <img class="thumb" src="img/hybrid-search.svg" alt="Hybrid search pipeline diagram">
+        <span class="badge b-built">Built · live demo</span>
+        <h3>Hybrid Search &amp; Retrieval Evaluation</h3>
+        <p>Hybrid BM25 + ANN + transformer reranking over 8,807 Netflix records behind a cached FastAPI service, with latency benchmarks and a tool-calling agent with grounding checks.</p>
+        <p class="why"><b>Shows:</b> retrieval, serving, evaluation, tests, CI and Docker.</p>
+        <div class="stack"><span>Python</span><span>FastAPI</span><span>BM25</span><span>Docker</span></div>
+        <div class="row"><a href="https://github.com/SBusienei/Netflix-Relevance-Project">Code</a><a href="https://cheruto-netflix-relevance.streamlit.app/genre">Live app</a></div>
+      </article>
+      <article class="card" data-tags="mle fde">
+        <img class="thumb" src="img/job-extraction.svg" alt="Job posting to structured JSON">
+        <span class="badge b-wip">In progress</span>
+        <h3>LLM-Based Job Posting Extraction</h3>
+        <p>Turning messy job posts into validated structured data, with retries, fallback models, and accuracy, cost and latency benchmarks.</p>
+        <p class="why"><b>Shows:</b> reliable LLM pipelines, schema validation, cost awareness.</p>
+        <div class="stack"><span>Python</span><span>LLMs</span><span>JSON schema</span></div>
+      </article>
+      <article class="card" data-tags="mle fde">
+        <img class="thumb" src="img/sloth.svg" alt="Photo triage flow">
+        <span class="badge b-eval">Evaluated</span>
+        <h3>Sloth Archivist</h3>
+        <p>An offline CLI that triages photo folders with rules first, a local vision model second, and logs every decision. Nothing is deleted.</p>
+        <p class="why"><b>Shows:</b> pipeline design, safe automation, schema-validated model output.</p>
+        <div class="stack"><span>Python</span><span>Ollama</span><span>Gemma</span><span>pytest</span></div>
+        <div class="row"><a href="https://github.com/SBusienei/sloth-archivist">Code</a></div>
+      </article>
+      <article class="card" data-tags="ds">
+        <img class="thumb" src="img/ab-tests.svg" alt="Illustrative bar chart">
+        <span class="badge b-wip">In progress</span>
+        <h3>Hotel cancellation risk</h3>
+        <p>SQL-first analysis and chronologically validated models, explicit about prediction versus intervention.</p>
+        <p class="why"><b>Shows:</b> SQL, data quality, leakage control, calibration.</p>
+        <div class="stack"><span>PostgreSQL</span><span>scikit-learn</span><span>pandas</span></div>
+        <div class="row"><a href="https://github.com/SBusienei/04-housing-data-analysis">Code</a></div>
+      </article>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <p class="sub">Tools I use, and what I can do with them.</p>
+          <div class="skills">
+            <div class="skill"><h3>Tools</h3><div class="tags">
+              <span>Python</span><span>FastAPI</span><span>Docker</span><span>Git</span><span>GitHub Actions</span></div></div>
+      <div class="skill"><h3>AI &amp; retrieval</h3><div class="tags">
+        <span>LLM applications</span><span>Agents</span><span>BM25</span><span>Semantic retrieval</span><span>Embeddings</span><span>Ranking</span><span>Recommendation</span></div></div>
+      <div class="skill"><h3>Evaluation &amp; data</h3><div class="tags">
+        <span>Offline &amp; online evaluation</span><span>A/B experimentation</span><span>Telemetry at scale</span><span>SQL</span><span>C#</span><span>KQL / Azure Data Explorer</span></div></div>
+      <div class="skill"><h3>Languages</h3><div class="tags">
+        <span>English (fluent)</span><span>Swahili (native)</span><span>French (basic)</span></div></div>
+      <div class="skill"><h3>Learning now</h3><div class="tags">
+        <span class="learning">RAG</span><span class="learning">LLM evals</span><span class="learning">MCP</span><span class="learning">Deployment</span><span class="learning">Observability</span></div></div>
+    </div>
+  </section>
+
+  <section id="writing">
+    <h2>Writing</h2>
+    <p class="sub">Articles on what I'm building and learning in AI engineering.</p>
+    <ul class="posts">
+      <li><a href="https://medium.com/@sbusienei">Articles on Medium →</a><span class="d mono">Medium</span></li>
+      <li><a href="https://dev.to/sbusienei">Articles on DEV →</a><span class="d mono">DEV</span></li>
+    </ul>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Let's talk</h2>
+    <p class="sub">Open to roles anywhere, remote or relocation. Based in Nairobi, Kenya.</p>
+    <div class="cta">
+      <a class="btn primary" href="https://www.linkedin.com/in/sharleencheruto/">      Message me on LinkedIn</a>
+          </div>
+  </section>
+
+  <footer class="mono">© Sharleen Busienei · design draft</footer>
+</div>
+<script src="site.js"></script>
+</body>
+</html>

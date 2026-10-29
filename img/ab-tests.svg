@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 200" role="img" aria-label="Illustrative chart: baseline versus treatment">
+  <rect width="480" height="200" fill="#10151c"/>
+  <g stroke="#262d38"><path d="M40 160H450M40 120H450M40 80H450M40 40H450"/></g>
+  <g fill="#8b96a5" fill-opacity=".6"><rect x="80" y="100" width="46" height="60" rx="4"/><rect x="200" y="96" width="46" height="64" rx="4"/><rect x="320" y="104" width="46" height="56" rx="4"/></g>
+  <g fill="#7ee0b5"><rect x="132" y="76" width="46" height="84" rx="4"/><rect x="252" y="62" width="46" height="98" rx="4"/><rect x="372" y="84" width="46" height="76" rx="4"/></g>
+  <g font-family="monospace" font-size="11" fill="#8b96a5" text-anchor="middle"><text x="129" y="180">test A</text><text x="249" y="180">test B</text><text x="369" y="180">test C</text></g>
+  <text x="440" y="24" font-family="monospace" font-size="11" fill="#8b96a5" text-anchor="end">illustrative, not real data</text>
+</svg>
