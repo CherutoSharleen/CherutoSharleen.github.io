@@ -66,6 +66,7 @@ section { padding:44px 0; }
 .job.todo::before { background:var(--bg); border:2px dashed var(--muted); }
 .job h3 { margin:0; font-size:18px; display:flex; align-items:center; gap:10px; }
 .brand { display:inline-flex; align-items:center; gap:10px; }
+h1 .tag { display:inline-block; font-size:.5em; font-weight:600; margin-top:.2em; }
 .brand img { width:32px; height:32px; border-radius:50%; object-fit:cover; border:1px solid var(--accent); }
 .job .co { width:20px; height:20px; flex:none; }
 .job .meta { color:var(--muted); font-size:13px; margin-bottom:6px; }
